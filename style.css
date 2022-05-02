@@ -70,7 +70,10 @@ html {
     left: 0;
     right: 0;
     text-align: center;
+}
 
+.reference a {
+    color: white;
 }
 
 .right-content {
