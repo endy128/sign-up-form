@@ -25,9 +25,31 @@
         </div>
         <div class="middle">
             <h2>Let's do this!</h2>
+            <div class="form-container">
+                <form id="my-form" action="" method="post">
+                    <label for="firstName">First Name:
+                        <input type="text" id="firstName" name="firstName" required>
+                    </label>
+                    <label for="lastName">Last Name:
+                        <input type="text" id="lastName" name="lastName" required>
+                    </label>
+                    <label for="user_email">Email Address:
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label for="phoneNumber">Phone Number:
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required pattern='[0-9]{10}'>
+                    </label>
+                    <label for="userPassword">Password:
+                        <input type="password" id="userPassword" name="password" required>
+                    </label>
+                    <label for="confirmPassword">Confirm password:
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </label>
+                </form>
+            </div>
         </div>
         <div class="bottom">
-            <button>Create Account</button>
+            <button type="submit" form="my-form">Create Account</button>
             <p>Already have an account? <a href="./index.html">Log in</a></p>
         </div>
     </div>

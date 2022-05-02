@@ -36,9 +36,9 @@ html {
     flex-direction: column;
     background-image: url("asset/background.avif");
     background-color: #0e3d06;
-    background-size: 33vw;
+    background-size: 33.33vw;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 33.33%;
     position: relative;
 }
 
@@ -76,7 +76,7 @@ html {
 .right-content {
     display: flex;
     flex-direction: column;
-    width: 66vw;
+    width: 66.66vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -121,6 +121,45 @@ button {
 }
 
 .middle {
-    box-shadow: -7px 5px 5px 5px lightgray; 
-    padding: 24px
+    box-shadow: 0px 5px 5px 5px lightgray; 
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
 }
+
+.middle h2 {
+    margin-bottom: 24px;
+}
+
+
+
+
+form {
+    display: flex;
+    width: 700px;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+
+  label {
+    position: relative;
+    width: 240px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: small;
+    margin-right: 48px;
+  }
+
+  input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    margin-top: 3px;
+    width: 240px;
+  }
+
+  input:focus {
+      outline: 1px solid rgb(129, 129, 250);
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px lightgray;
+  }
