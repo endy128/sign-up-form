@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'norse';
+    src: url('asset/Norse-Bold.woff2') format('woff2'),
+         url('asset/Norse-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    background: white;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black ; */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url("asset/background.avif");
+    background-color: #0e3d06;
+    background-size: 33vw;
+    background-repeat: no-repeat;
+    width: 33%;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 120px;
+    width: 100%;
+    position: relative;
+    top: 33%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font : 5em "norse", monospace;
+    gap: 6px;
+}
+
+.banner img {
+    height: 100px;
+    display: flex;
+}
+
+.reference {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 66vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top, 
+.middle, 
+.bottom {
+    display: flex;
+    height: 33vh;
+    min-height: 200px;
+    padding-left: 24px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+}
+
+.top h2 {
+    max-width: 740px;
+    padding-bottom: 24px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 48px;
+}
+
+button {
+    width: 200px;
+    height: 48px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    font-size: large;
+    color: white;
+    background-color: #596D48;
+    margin-bottom: 24px;
+}
+
+.middle {
+    box-shadow: -7px 5px 5px 5px lightgray; 
+    padding: 24px
+}
